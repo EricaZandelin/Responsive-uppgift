@@ -11,36 +11,39 @@
     <title>Responsive</title>
 </head>
 <body>
-    <header>
-        
-        <nav class ="navbar">
+        <header>
+          <div class="all__navbar">
             <div class="logo"><a class="logo" href="#">.Head</a></div>
-            <ul class="nav__list">
-                <li class="nav__li"><a class="nav__link" href="#">Works</a></li>
-                <li class="nav__li"><a class="nav__link" href="#">Services</a></li>
-                <li class="nav__li"><a class="nav__link" href="#">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
+                <nav class ="nav">
+                    <ul class="nav__list">
+                        <li><a class="nav__link" href="#">Works</a></li>
+                        <li><a class="nav__link" href="#">Services</a></li>
+                        <li><a class="nav__link" href="#">Contacts</a></li>
+                    </ul>
+                  </nav>
+          </div>        
+        </header>
 
-    <!--Hur får jag ner pilen en bit?-->
-    <div class="wrapper">
-            <div class="text">  
-            <h1>MUSICIAN</h1>
-            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
-            <img class="arrow" src="images/Shape.svg" > 
-        </div>
-        
+        <!--Hur får jag ner pilen en bit?-->
+        <div class="wrapper">
+                <div class="text">  
+                    <h1 style="font-size:5vw">MUSICIAN</h1>
+                    <p style="font-size: 2vw;">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
+                    <img class="arrow" src="images/Shape.svg" > 
+                </div>
             
-    
-        <div class="container__pic">
-            <picture>
-                <source media="(max-width: 800px)" srcset="images/l.jpg">
-                <source media="(max-width: 1000px)" srcset="images/m.jpg">
-                <source media="(max-width: 1001px)" srcset="images/s.jpg">
-                <img src="images/l.jpg">    
-            </picture>
-        </div>
+                
+           <!-- <img src="images/l.jpg" style="max-width:100%;"--> 
+
+        
+            <div class="container__pic">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/s.jpg">
+                    <source media="(max-width: 768px)" srcset="images/m.jpg">
+                    <source media="(max-width: 992px)" srcset="images/l.jpg">
+                    <img src="images/l.jpg" style="max-width:100%">    
+                </picture>
+            </div> 
     </div>    
         
 </body>
